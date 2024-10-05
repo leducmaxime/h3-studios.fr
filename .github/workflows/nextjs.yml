@@ -37,7 +37,7 @@ jobs:
           node-version: "18"
           cache: npm
       - name: Setup Pages
-        uses: actions/configure-pages
+        uses: actions/configure-pages@main
         with:
           static_site_generator: next
       - name: Restore cache
