@@ -22,11 +22,15 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body
+        className={`h-screen bg-[url('/images/background.png')] ${inter.className}`}
+      >
         <Providers>
           <Header />
-          {children}
-          <Footer />
+          <div className="flex h-full flex-col justify-between">
+            {children}
+            {/* <Footer /> */}
+          </div>
           <ScrollToTop />
         </Providers>
       </body>
