@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="mx-8 flex min-h-full grow flex-col items-center justify-center gap-8 md:mx-16 md:min-h-fit md:py-24">
+    <div className="mx-8 flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <ExportedImage src={image1} alt="H3 Studios" width={900} />
       <ExportedImage
