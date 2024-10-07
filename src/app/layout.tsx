@@ -25,14 +25,16 @@ export default function RootLayout({
       <body
         className={`h-screen bg-[url('/images/background.png')] ${inter.className}`}
       >
-        <Providers>
-          <Header />
-          <div className="flex h-full flex-col justify-between">
-            {children}
-            {/* <Footer /> */}
-          </div>
-          <ScrollToTop />
-        </Providers>
+        <div className="h-screen w-screen overflow-y-auto overflow-x-hidden">
+          <Providers>
+            <Header />
+            <div className="flex h-full flex-col justify-between">
+              {children}
+              {/* <Footer /> */}
+            </div>
+            <ScrollToTop />
+          </Providers>
+        </div>
       </body>
     </html>
   );

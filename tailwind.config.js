@@ -39,6 +39,9 @@ module.exports = {
         transparent: "transparent",
         primary: "#ffde59",
       },
+      fontFamily: {
+        blanka: ["Blanka", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,8 @@ import image3 from "public/images/home/3.png";
 
 export const metadata: Metadata = {
   title: "H3 STUDIOS",
-  description: "H3 STUDIOS",
+  description:
+    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
 };
 
 export default function Home() {
@@ -21,16 +22,26 @@ export default function Home() {
         alt="Répétitions - Enregistrements"
         width={800}
       />
-      <ExportedImage
-        src={image3}
-        alt="Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux"
-        width={800}
-      />
+      <div className="text-center font-blanka text-lg md:text-2xl lg:text-3xl">
+        {[
+          "Location de materiel",
+          "Cours de Batterie",
+          "Privatisation",
+          "Ateliers d'arrangements musicaux",
+        ].map((text, i, a) => (
+          <>
+            <span key={i} className="whitespace-nowrap">
+              {text}
+              {i !== a.length - 1 ? " -" : ""}
+            </span>{" "}
+          </>
+        ))}
+      </div>
       <a
         href="https://www.quickstudio.com/en/studios/h3-studios"
         target="_blank"
       >
-        <button className="mt-8 rounded-[3rem] bg-primary px-12 py-4 text-[3rem] font-bold text-black">
+        <button className="mt-8 rounded-[3rem] bg-primary px-12 py-4 text-[1rem] font-bold text-black md:text-[2rem] xl:text-[3rem]">
           Réservation
         </button>
       </a>
