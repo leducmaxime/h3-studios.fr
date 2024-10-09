@@ -58,7 +58,12 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <ExportedImage src={logo} alt="logo" width={60} />
+                <ExportedImage
+                  src={logo}
+                  alt="logo"
+                  width={60}
+                  placeholder="empty"
+                />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">

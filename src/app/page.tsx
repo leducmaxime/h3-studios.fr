@@ -16,11 +16,19 @@ export default function Home() {
   return (
     <div className="mx-8 flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
       <ScrollUp />
-      <ExportedImage src={image1} alt="H3 Studios" width={900} />
+      <ExportedImage
+        src={image1}
+        alt="H3 Studios"
+        placeholder="empty"
+        sizes="(max-width: 900px) 100vw, 900px"
+        className="xl:w-[900px]"
+      />
       <ExportedImage
         src={image2}
         alt="Répétitions - Enregistrements"
-        width={800}
+        placeholder="empty"
+        sizes="(max-width: 800px) 100vw, 800px"
+        className="lg:w-[800px]"
       />
       <div className="text-center font-blanka text-lg md:text-2xl lg:text-3xl">
         {[

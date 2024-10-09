@@ -45,10 +45,15 @@ export default function Home() {
               {studio.name}
             </div>
             <div className="font-blanka text-2xl">{studio.size}</div>
-            <div className="h-48 w-full px-8">
+            <div className="aspect-video w-full px-8">
               <Carousel slideInterval={3000}>
                 {studio.images.map((image, i) => (
-                  <ExportedImage key={i} src={image} alt={studio.name} />
+                  <ExportedImage
+                    key={i}
+                    src={image}
+                    alt={studio.name}
+                    sizes="(min-width: 576px) 306px, 624px"
+                  />
                 ))}
               </Carousel>
             </div>

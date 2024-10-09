@@ -23,7 +23,7 @@ export default function RootLayout({
       <head />
 
       <body
-        className={`h-screen bg-[url('/images/background.png')] ${inter.className}`}
+        className={`h-screen bg-[url('/images/background.webp')] ${inter.className}`}
       >
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden text-white">
           <Providers>
