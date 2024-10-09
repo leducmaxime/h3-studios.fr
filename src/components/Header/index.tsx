@@ -62,6 +62,7 @@ const Header = () => {
                   src={logo}
                   alt="logo"
                   width={60}
+                  priority
                   placeholder="empty"
                 />
               </Link>

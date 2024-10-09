@@ -21,6 +21,7 @@ export default function Home() {
         alt="H3 Studios"
         placeholder="empty"
         sizes="(max-width: 900px) 100vw, 900px"
+        priority
         className="xl:w-[900px]"
       />
       <ExportedImage
@@ -28,6 +29,7 @@ export default function Home() {
         alt="Répétitions - Enregistrements"
         placeholder="empty"
         sizes="(max-width: 800px) 100vw, 800px"
+        priority
         className="lg:w-[800px]"
       />
       <div className="text-center font-blanka text-lg md:text-2xl lg:text-3xl">

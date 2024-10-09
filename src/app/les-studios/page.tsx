@@ -62,6 +62,7 @@ export default async function Home() {
                     alt={`${studio.name} - ${i}`}
                     sizes="(min-width: 576px) 306px, 624px"
                     className="min-h-full object-cover"
+                    priority={i === 0}
                   />
                 ))}
               </Carousel>
