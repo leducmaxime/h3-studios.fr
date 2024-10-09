@@ -2,7 +2,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 
-import scene1 from "public/images/les-studios/scene-1.jpg";
+import scene1 from "public/images/les-tarifs/1.jpg";
 
 export const metadata: Metadata = {
   title: "H3 STUDIOS - Les Course",
@@ -15,9 +15,9 @@ export default async function Home() {
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="font-blanka text-5xl lg:text-6xl">LES TARIFS</div>
-      <div className="flex w-full flex-col gap-8 border-8 border-primary bg-black p-8">
+      <div className="flex w-full max-w-[1048px] flex-col gap-8 border-8 border-primary bg-black p-8">
         <div className="flex flex-col gap-8 lg:flex-row">
-          <div className="flex flex-col gap-8 lg:basis-1/2">
+          <div className="flex flex-col items-center gap-8 text-center lg:basis-2/5 lg:items-start lg:text-left">
             <div>
               <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
                 LOCATION STUDIO
@@ -58,12 +58,12 @@ Journée : 320€`}</p>
             </div>
             <p className="whitespace-pre-line">{`Nous contacter`}</p>
           </div>
-          <div className="flex items-center lg:basis-1/2">
+          <div className="flex items-center lg:basis-3/5">
             <ExportedImage
               src={scene1}
               alt={"Marcel HAMON"}
               sizes=""
-              className=""
+              className="min-h-full object-cover"
               priority
             />
           </div>

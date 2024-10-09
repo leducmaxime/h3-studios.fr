@@ -43,41 +43,45 @@ export default async function Home() {
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="font-blanka text-5xl lg:text-6xl">LES STUDIOS</div>
-      <div className="flex w-full flex-col gap-8 lg:flex-row">
+      <div className="flex w-full flex-col gap-8 lg:flex-row lg:px-32">
         {studios.map((studio, i) => (
           <div
             key={i}
-            className="flex w-full flex-col items-center gap-6 border-8 border-primary bg-black p-4 lg:w-1/2"
+            className="flex w-full flex-col items-center gap-4 border-8 border-primary bg-black p-4 lg:w-1/2"
           >
             <div className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
               {studio.name}
             </div>
             <div className="font-blanka text-2xl">{studio.size}</div>
-            <div className="aspect-video w-full px-8">
-              <Carousel slideInterval={3000}>
-                {studio.images.map((image, i) => (
-                  <ExportedImage
-                    key={i}
-                    src={image}
-                    alt={`${studio.name} - ${i}`}
-                    sizes="(min-width: 576px) 306px, 624px"
-                    className="min-h-full object-cover"
-                    priority={i === 0}
-                  />
-                ))}
-              </Carousel>
+            <div className="w-full px-16">
+              <div className="aspect-video">
+                <Carousel slideInterval={3000}>
+                  {studio.images.map((image, i) => (
+                    <ExportedImage
+                      key={i}
+                      src={image}
+                      alt={`${studio.name} - ${i}`}
+                      sizes="(min-width: 576px) 306px, 624px"
+                      className="min-h-full object-cover"
+                      priority={i === 0}
+                    />
+                  ))}
+                </Carousel>
+              </div>
             </div>
             <div className="px-16 text-center text-lg font-semibold">
               {studio.description}
             </div>
-            <a
-              href="https://www.quickstudio.com/en/studios/h3-studios"
-              target="_blank"
-            >
-              <button className="rounded-[3rem] bg-primary px-12 py-4 text-[1rem] font-bold text-black md:text-[1.5rem]">
-                Réservation
-              </button>
-            </a>
+            <div className="mt-auto">
+              <a
+                href="https://www.quickstudio.com/en/studios/h3-studios"
+                target="_blank"
+              >
+                <button className="rounded-[3rem] bg-primary px-12 py-4 text-[1rem] font-bold text-black md:text-[1.5rem]">
+                  Réservation
+                </button>
+              </a>
+            </div>
           </div>
         ))}
       </div>

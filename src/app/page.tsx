@@ -20,19 +20,19 @@ export default function Home() {
         src={image1}
         alt="H3 Studios"
         placeholder="empty"
-        sizes="(max-width: 900px) 100vw, 900px"
+        sizes="(max-width: 750px) 100vw, 750px"
         priority
-        className="xl:w-[900px]"
+        className="xl:w-[750px]"
       />
       <ExportedImage
         src={image2}
         alt="Répétitions - Enregistrements"
         placeholder="empty"
-        sizes="(max-width: 800px) 100vw, 800px"
+        sizes="(max-width: 650px) 100vw, 650px"
         priority
-        className="lg:w-[800px]"
+        className="lg:w-[650px]"
       />
-      <div className="text-center font-blanka text-lg md:text-2xl lg:text-3xl">
+      <div className="text-center font-blanka text-lg md:text-2xl">
         {[
           "Location de materiel",
           "Cours de Batterie",
@@ -51,7 +51,7 @@ export default function Home() {
         href="https://www.quickstudio.com/en/studios/h3-studios"
         target="_blank"
       >
-        <button className="mt-8 rounded-[3rem] bg-primary px-12 py-4 text-[1rem] font-bold text-black md:text-[2rem] xl:text-[3rem]">
+        <button className="mt-8 rounded-[3rem] bg-primary px-8 py-2 text-[1rem] font-bold text-black md:text-[2rem]">
           Réservation
         </button>
       </a>
