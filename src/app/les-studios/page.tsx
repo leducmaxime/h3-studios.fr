@@ -26,15 +26,15 @@ const studios = [
     name: "LA SCÈNE",
     size: "42 M2",
     description:
-      "Avec une hauteur de 3,50 m, notre studio propose une scène intimiste avec sa rampe d’éclairage, un écran géant et un vidéoprojecteur. Convenant à tous styles musicaux, ce lieu chaleureux et fonctionnel saura répondre à vos besoins.",
-    images: [scene1, scene2, scene3, scene4, scene5],
+      "Avec une hauteur de 3,50m, notre studio propose une scène intimiste avec sa rampe d’éclairage, un écran géant et un vidéoprojecteur. Convenant à tous styles musicaux, ce lieu chaleureux et fonctionnel saura répondre à vos besoins.",
+    images: [scene2, scene5, scene3, scene1, scene4],
   },
   {
     name: "LE PODIUM",
     size: "35 M2",
     description:
       "Conçu pour la répétition, cet espace offre un cadre simple et fonctionnel, idéal pour vos sessions musicales, en groupe ou en solo. Cette salle est également adapté aux enseignants souhaitant donner des cours à un ou plusieurs élèves.",
-    images: [podium1, podium2, podium3],
+    images: [podium2, podium1, podium3],
   },
 ];
 
