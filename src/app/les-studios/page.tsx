@@ -40,14 +40,14 @@ const studios = [
 
 export default async function Home() {
   return (
-    <div className="flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
+    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="font-blanka text-5xl lg:text-6xl">LES STUDIOS</div>
       <div className="flex w-full flex-col gap-8 lg:flex-row">
         {studios.map((studio, i) => (
           <div
             key={i}
-            className="flex w-full flex-col items-center gap-6 border-8 border-primary p-4 lg:w-1/2"
+            className="flex w-full flex-col items-center gap-6 border-8 border-primary bg-black p-4 lg:w-1/2"
           >
             <div className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
               {studio.name}

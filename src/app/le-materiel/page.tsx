@@ -44,7 +44,7 @@ const customTheme: CustomFlowbiteTheme["table"] = {
 
 export default async function Home() {
   return (
-    <div className="flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
+    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="flex w-full flex-col gap-16">
         <div className="text-center font-blanka text-5xl lg:text-6xl">
