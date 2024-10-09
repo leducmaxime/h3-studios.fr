@@ -1,11 +1,19 @@
+import { promises as fs } from "fs";
+import path from "path";
 import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 import { Carousel } from "flowbite-react";
 
-import image1 from "public/images/les-studios/1.jpg";
-import image2 from "public/images/les-studios/2.jpg";
-import image3 from "public/images/les-studios/3.jpg";
+import scene1 from "public/images/les-studios/scene-1.jpg";
+import scene2 from "public/images/les-studios/scene-2.jpg";
+import scene3 from "public/images/les-studios/scene-3.jpg";
+import scene4 from "public/images/les-studios/scene-4.jpg";
+import scene5 from "public/images/les-studios/scene-5.jpg";
+
+import podium1 from "public/images/les-studios/podium-1.jpg";
+import podium2 from "public/images/les-studios/podium-2.jpg";
+import podium3 from "public/images/les-studios/podium-3.jpg";
 
 export const metadata: Metadata = {
   title: "H3 STUDIOS - Les Studios",
@@ -19,18 +27,18 @@ const studios = [
     size: "42 M2",
     description:
       "Avec une hauteur de 3,50 m, notre studio propose une scène intimiste avec sa rampe d’éclairage, un écran géant et un vidéoprojecteur. Convenant à tous styles musicaux, ce lieu chaleureux et fonctionnel saura répondre à vos besoins.",
-    images: [image1, image2, image3],
+    images: [scene1, scene2, scene3, scene4, scene5],
   },
   {
     name: "LE PODIUM",
     size: "35 M2",
     description:
       "Conçu pour la répétition, cet espace offre un cadre simple et fonctionnel, idéal pour vos sessions musicales, en groupe ou en solo. Cette salle est également adapté aux enseignants souhaitant donner des cours à un ou plusieurs élèves.",
-    images: [image1, image2, image3],
+    images: [podium1, podium2, podium3],
   },
 ];
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
       <ScrollUp />
@@ -51,8 +59,9 @@ export default function Home() {
                   <ExportedImage
                     key={i}
                     src={image}
-                    alt={studio.name}
+                    alt={`${studio.name} - ${i}`}
                     sizes="(min-width: 576px) 306px, 624px"
+                    className="min-h-full object-cover"
                   />
                 ))}
               </Carousel>
