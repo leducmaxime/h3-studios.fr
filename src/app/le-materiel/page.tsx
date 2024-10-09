@@ -1,5 +1,6 @@
 import ScrollUp from "@/components/Common/ScrollUp";
 import { Metadata } from "next";
+import type { CustomFlowbiteTheme } from "flowbite-react";
 import {
   Table,
   TableHead,
@@ -15,6 +16,32 @@ export const metadata: Metadata = {
     "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
 };
 
+const customTheme: CustomFlowbiteTheme["table"] = {
+  root: {
+    base: "w-full text-left text-sm text-white",
+    shadow:
+      "absolute left-0 top-0 -z-10 h-full w-full rounded-lg bg-white drop-shadow-md dark:bg-black",
+    wrapper: "relative",
+  },
+  body: {
+    base: "group/body",
+    cell: {
+      base: "px-6 py-4 group-first/body:group-first/row:first:rounded-tl-lg group-first/body:group-first/row:last:rounded-tr-lg group-last/body:group-last/row:first:rounded-bl-lg group-last/body:group-last/row:last:rounded-br-lg",
+    },
+  },
+  head: {
+    base: "group/head text-xs uppercase text-white",
+    cell: {
+      base: "bg-gray-50 px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg bg-gray-900",
+    },
+  },
+  row: {
+    base: "group/row border-primary",
+    hovered: "hover:bg-gray-50 dark:hover:bg-gray-600",
+    striped: "odd:bg-black-800 even:bg-black-700",
+  },
+};
+
 export default async function Home() {
   return (
     <div className="flex min-h-fit grow flex-col items-center justify-center gap-8 pb-8 pt-32">
@@ -27,7 +54,11 @@ export default async function Home() {
           <div className="text-center font-blanka text-2xl lg:text-3xl">
             EQUIPEMENT DES STUDIOS
           </div>
-          <Table striped className="border-8 border-primary">
+          <Table
+            theme={customTheme}
+            striped
+            className="border-8 border-primary"
+          >
             <TableHead>
               <TableHeadCell></TableHeadCell>
               <TableHeadCell>Studio La Scène</TableHeadCell>
@@ -97,7 +128,11 @@ export default async function Home() {
             <div className="text-center font-blanka text-2xl lg:text-3xl">
               {"EQUIPEMENT D'ENREGISTREMENT"}
             </div>
-            <Table striped className="border-8 border-primary">
+            <Table
+              theme={customTheme}
+              striped
+              className="border-8 border-primary"
+            >
               <TableBody className="divide-y">
                 <TableRow>
                   <TableCell>Chant</TableCell>
@@ -148,7 +183,11 @@ export default async function Home() {
             <div className="text-center font-blanka text-2xl lg:text-3xl">
               {"LOCATION D'INSTRUMENTS"}
             </div>
-            <Table striped className="border-8 border-primary">
+            <Table
+              theme={customTheme}
+              striped
+              className="border-8 border-primary"
+            >
               <TableBody className="divide-y">
                 <TableRow>
                   <TableCell>Basses / Guitares</TableCell>
