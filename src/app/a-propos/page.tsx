@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import celmar from "./images/celmar.jpg";
 import alexandre from "./images/alexandre.jpg";
 import caroline from "./images/caroline.jpg";
-import Map from "./map";
+import Map from "../../components/Common/Map";
 
 export const metadata: Metadata = {
   title: "H3 STUDIOS - Les Course",
