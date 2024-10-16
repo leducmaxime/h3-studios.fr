@@ -43,11 +43,11 @@ export default async function Home() {
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="font-blanka text-5xl lg:text-6xl">LES STUDIOS</div>
-      <div className="flex w-full flex-col gap-8 lg:flex-row lg:px-32">
+      <div className="flex w-full flex-col gap-8 xl:flex-row xl:px-32">
         {studios.map((studio, i) => (
           <div
             key={i}
-            className="flex w-full flex-col items-center gap-4 border-8 border-primary bg-black p-4 lg:w-1/2"
+            className="flex w-full flex-col items-center gap-4 border-8 border-primary bg-black p-4 xl:w-1/2"
           >
             <div className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
               {studio.name}
