@@ -2,7 +2,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 
-import scene1 from "public/images/les-studios/scene-1.jpg";
+import scene1 from "./images/1.png";
 
 export const metadata: Metadata = {
   title: "Les Cours",
@@ -46,7 +46,7 @@ N'attendez plus pour donner vie à votre passion musicale ! Contactez-moi dès m
               src={scene1}
               alt={"Marcel HAMON"}
               sizes=""
-              className=""
+              className="h-full object-cover object-left"
               priority
             />
           </div>
