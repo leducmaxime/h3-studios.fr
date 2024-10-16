@@ -16,9 +16,7 @@ import podium2 from "public/images/les-studios/podium-2.jpg";
 import podium3 from "public/images/les-studios/podium-3.jpg";
 
 export const metadata: Metadata = {
-  title: "H3 STUDIOS - Les Studios",
-  description:
-    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
+  title: "Les Studios",
 };
 
 const studios = [

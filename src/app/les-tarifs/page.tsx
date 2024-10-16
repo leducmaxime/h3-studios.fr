@@ -5,9 +5,7 @@ import { Metadata } from "next";
 import scene1 from "public/images/les-tarifs/1.png";
 
 export const metadata: Metadata = {
-  title: "H3 STUDIOS - Les Course",
-  description:
-    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
+  title: "Les Tarifs",
 };
 
 export default async function Home() {

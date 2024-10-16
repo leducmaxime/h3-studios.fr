@@ -8,9 +8,7 @@ import caroline from "./images/caroline.jpg";
 import Map from "../../components/Common/Map";
 
 export const metadata: Metadata = {
-  title: "H3 STUDIOS - Les Course",
-  description:
-    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
+  title: "À Propos",
 };
 
 export default async function Home() {

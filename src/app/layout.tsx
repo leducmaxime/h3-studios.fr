@@ -1,12 +1,33 @@
-"use client";
-
 // import Footer from "@/components/Footer";
+import { Metadata } from "next";
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://tmp.h3-studios.fr"),
+  title: {
+    template: "%s | H3 STUDIOS",
+    default: "H3 STUDIOS",
+  },
+  description:
+    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
+  openGraph: {
+    siteName: "H3 STUDIOS",
+    images: [
+      {
+        url: "/images/opengraph.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -15,10 +36,6 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="fr">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head>
         <link rel="preload" href="/images/background.webp" as="image" />
         <link

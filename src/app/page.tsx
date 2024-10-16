@@ -1,16 +1,8 @@
 import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
-import { Metadata } from "next";
 
 import image1 from "public/images/home/1.png";
 import image2 from "public/images/home/2.png";
-import image3 from "public/images/home/3.png";
-
-export const metadata: Metadata = {
-  title: "H3 STUDIOS",
-  description:
-    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
-};
 
 export default function Home() {
   return (

@@ -11,9 +11,7 @@ import {
 } from "flowbite-react";
 
 export const metadata: Metadata = {
-  title: "H3 STUDIOS - Le Matériel",
-  description:
-    "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
+  title: "Le Matériel",
 };
 
 const customTheme: CustomFlowbiteTheme["table"] = {
