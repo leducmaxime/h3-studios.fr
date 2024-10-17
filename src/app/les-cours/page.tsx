@@ -15,6 +15,15 @@ export default async function Home() {
       <div className="font-blanka text-5xl lg:text-6xl">LES COURS</div>
       <div className="flex w-full flex-col gap-8 border-8 border-primary bg-black p-8">
         <div className="flex flex-col gap-8 lg:flex-row">
+          <div className="flex items-center lg:basis-1/2">
+            <ExportedImage
+              src={scene1}
+              alt={"Marcel HAMON"}
+              sizes=""
+              className="h-full object-cover object-left"
+              priority
+            />
+          </div>
           <div className="flex flex-col gap-8 lg:basis-1/2">
             <div>
               <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
@@ -40,15 +49,6 @@ N'attendez plus pour donner vie à votre passion musicale ! Contactez-moi dès m
               </span>
             </div>
             <p className="whitespace-pre-line">{`Prochainement…`}</p>
-          </div>
-          <div className="flex items-center lg:basis-1/2">
-            <ExportedImage
-              src={scene1}
-              alt={"Marcel HAMON"}
-              sizes=""
-              className="h-full object-cover object-left"
-              priority
-            />
           </div>
         </div>
       </div>

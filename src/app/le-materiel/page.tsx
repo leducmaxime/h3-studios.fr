@@ -9,6 +9,7 @@ import {
   TableRow,
   TableCell,
 } from "flowbite-react";
+import Equipements from "./equipement";
 
 export const metadata: Metadata = {
   title: "Le Matériel",
@@ -28,9 +29,9 @@ const customTheme: CustomFlowbiteTheme["table"] = {
     },
   },
   head: {
-    base: "group/head text-xs uppercase text-white",
+    base: "group/head text-sm uppercase text-primary",
     cell: {
-      base: "bg-gray-50 px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg bg-gray-900",
+      base: "border-b border-primary px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg",
     },
   },
   row: {
@@ -52,74 +53,7 @@ export default async function Home() {
           <div className="text-center font-blanka text-2xl lg:text-3xl">
             EQUIPEMENT DES STUDIOS
           </div>
-          <Table
-            theme={customTheme}
-            striped
-            className="border-8 border-primary"
-          >
-            <TableHead>
-              <TableHeadCell></TableHeadCell>
-              <TableHeadCell>Studio La Scène</TableHeadCell>
-              <TableHeadCell>Studio Le Podium</TableHeadCell>
-            </TableHead>
-            <TableBody className="divide-y">
-              <TableRow>
-                <TableCell>Batterie</TableCell>
-                <TableCell>
-                  YAMAHA recording 9000 6 fûts (caisse claire Premier série pro
-                  XPK)
-                </TableCell>
-                <TableCell>
-                  Pearl DLX pro 6 fûts (Cymbale ride + Charlé Sabian)
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Amplificateurs - Basse</TableCell>
-                <TableCell>
-                  Trace Eliot GP7 SM 250w (rms) + Boomer Fender 300w (rms)
-                </TableCell>
-                <TableCell>AMPEQ Rocket bass RB210 500w</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Amplificateurs - Guitare</TableCell>
-                <TableCell>
-                  Marshall Valvestate VS 265, Fender performer 1000, Laney GC
-                  120c, Marshall acoustic AS 50D, Hugues & Kettner Warp 7
-                </TableCell>
-                <TableCell>
-                  Marshall Valvestate 80V, Fender Superamp, Roland acoustic
-                  Chorus AC-60, Vox DA5
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Sonorisation - Table mixage / effets</TableCell>
-                <TableCell>
-                  Mackie SR 24.4, Compresseur Boss CL-50, Reverb TC Electronic
-                  M-2000, EQ Alesis M-EQ230
-                </TableCell>
-                <TableCell>YAMAHA EMX 2000 effets intégrés</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Sonorisation - Amplification</TableCell>
-                <TableCell>
-                  Dynacord L2800 FD, Montarbo 402, Enceintes DAS 2x400w, caisson
-                  basse 2x500w
-                </TableCell>
-                <TableCell>
-                  Dynacord PAA 300, Bose 802 série II / DAS / Ross (2x450w en
-                  tout), caisson 502B
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Retours</TableCell>
-                <TableCell>
-                  Ampli ROSS méga Amp 800, Enceintes DAS 2x300w, Laney amplifiés
-                  2x200w
-                </TableCell>
-                <TableCell>Ampli aeq 301, Enceintes ROSS</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <Equipements customTheme={customTheme} />
         </div>
         <div className="flex flex-col gap-8 xl:flex-row">
           <div className="flex flex-col gap-8 xl:basis-1/2">

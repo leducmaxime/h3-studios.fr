@@ -15,6 +15,15 @@ export default async function Home() {
       <div className="font-blanka text-5xl lg:text-6xl">LES TARIFS</div>
       <div className="flex w-full max-w-[1048px] flex-col gap-8 border-8 border-primary bg-black p-8">
         <div className="flex flex-col gap-8 lg:flex-row">
+          <div className="flex items-center lg:basis-3/5">
+            <ExportedImage
+              src={scene1}
+              alt={"Marcel HAMON"}
+              sizes=""
+              className="min-h-full object-cover"
+              priority
+            />
+          </div>
           <div className="flex flex-col items-center gap-8 text-center lg:basis-2/5 lg:items-start lg:text-left">
             <div>
               <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
@@ -55,15 +64,6 @@ Journée : 320€`}</p>
               </span>
             </div>
             <p className="whitespace-pre-line">{`Nous contacter`}</p>
-          </div>
-          <div className="flex items-center lg:basis-3/5">
-            <ExportedImage
-              src={scene1}
-              alt={"Marcel HAMON"}
-              sizes=""
-              className="min-h-full object-cover"
-              priority
-            />
           </div>
         </div>
       </div>
