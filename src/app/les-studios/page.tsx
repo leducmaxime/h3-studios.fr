@@ -40,18 +40,20 @@ export default async function Home() {
   return (
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
-      <div className="font-blanka text-5xl lg:text-6xl">LES STUDIOS</div>
-      <div className="flex w-full flex-col gap-8 xl:flex-row xl:px-32">
+      <div className="font-blanka text-3xl md:text-5xl lg:text-6xl">
+        LES STUDIOS
+      </div>
+      <div className="flex w-full flex-col gap-8 xl:flex-row xl:px-16 2xl:px-32">
         {studios.map((studio, i) => (
           <div
             key={i}
-            className="flex w-full flex-col items-center gap-4 border-8 border-primary bg-black p-4 xl:w-1/2"
+            className="flex basis-full flex-col items-center gap-8 border-8 border-primary bg-black p-4 lg:basis-1/2"
           >
             <div className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
               {studio.name}
             </div>
             <div className="font-blanka text-2xl">{studio.size}</div>
-            <div className="w-full px-16">
+            <div className="w-full px-0 lg:px-0 xl:px-4">
               <div className="aspect-video">
                 <Carousel slideInterval={3000}>
                   {studio.images.map((image, i) => (
@@ -67,7 +69,7 @@ export default async function Home() {
                 </Carousel>
               </div>
             </div>
-            <div className="px-16 text-center text-lg font-semibold">
+            <div className="px-0 text-center text-lg font-semibold lg:px-16">
               {studio.description}
             </div>
             <div className="mt-auto">
@@ -75,7 +77,7 @@ export default async function Home() {
                 href="https://www.quickstudio.com/en/studios/h3-studios"
                 target="_blank"
               >
-                <button className="rounded-[3rem] bg-primary px-12 py-4 text-[1rem] font-bold text-black md:text-[1.5rem]">
+                <button className="rounded-[3rem] bg-primary px-12 py-4 text-xl font-bold text-black md:text-3xl">
                   Réservation
                 </button>
               </a>

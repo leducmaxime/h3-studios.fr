@@ -16,7 +16,7 @@ export default async function Home() {
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="font-blanka text-5xl lg:text-6xl">A PROPOS</div>
-      <div className="flex w-full max-w-[1048px] flex-col items-center gap-8 border-8 border-primary bg-black p-8">
+      <div className="flex w-full max-w-[1048px] flex-col items-center gap-8 border-8 border-primary bg-black p-4 sm:p-8">
         <div className="flex max-w-[768px] flex-col items-center gap-24 text-center">
           <div className="flex max-w-[640px] flex-col items-center gap-8 text-center">
             <p>
@@ -26,7 +26,7 @@ export default async function Home() {
               }
             </p>
             <span className="text-primary">Vous êtes :</span>
-            <ul className="list-none">
+            <ul className="flex list-none flex-col gap-2">
               <li>
                 {
                   "> Un groupe de musique amplifiée/acoustique, professionnel/amateur, souhaitant répéter, d’enregistrer, se produire dans un lieu adéquat."
@@ -54,7 +54,7 @@ export default async function Home() {
                 {"L'ÉQUIPE"}
               </span>
             </div>
-            <div className="flex gap-8">
+            <div className="flex gap-4 px-2">
               {[
                 { src: celmar, name: "Marcel" },
                 { src: alexandre, name: "Alexandre" },
@@ -81,14 +81,23 @@ export default async function Home() {
             </div>
             <div>contact@h3-studios.fr - 06 13 44 08 75</div>
           </div>
-          <div className="flex flex-col items-center gap-8 text-center">
+          <div className="flex w-full flex-col items-center gap-8 text-center">
             <div>
               <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
                 {"LOCALISATION"}
               </span>
             </div>
-            <div className="flex flex-col items-center gap-8 lg:flex-row">
-              <div className="flex flex-col gap-8">
+            <div className="flex w-full flex-col items-center gap-8 lg:flex-row">
+              <div className="flex w-full flex-col gap-8 lg:basis-1/2">
+                <p className="whitespace-pre-line underline hover:font-bold">
+                  <a
+                    href="https://maps.app.goo.gl/STjxqLmfUnL6mEMY9"
+                    target="_blank"
+                  >
+                    {`3 Rue de la Grande Ceinture
+                    94370 Sucy-en-Brie`}
+                  </a>
+                </p>
                 <p className="whitespace-pre-line">
                   {`En transport en commun : 
                     Gare de Sucy-Bonneuil à 2min à pied
@@ -99,7 +108,7 @@ export default async function Home() {
                     Stationnement gratuit dans la rue`}
                 </p>
               </div>
-              <div>
+              <div className="w-full lg:basis-1/2">
                 <Map />
               </div>
             </div>

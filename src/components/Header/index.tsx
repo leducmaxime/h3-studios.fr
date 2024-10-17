@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import ExportedImage from "next-image-export-optimizer";
 import logo from "public/images/logo/logo.png";
+import { useClickAway } from "@uidotdev/usehooks";
 
 const Header = () => {
   // Navbar toggle
@@ -13,6 +13,9 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+  const ref = useClickAway<HTMLElement>(() => {
+    setNavbarOpen(false);
+  });
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -39,6 +42,14 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  const [spin, setSpin] = useState(false);
+  const onLogoClick = () => {
+    setSpin(true);
+    setTimeout(() => {
+      setSpin(false);
+    }, 1000);
+  };
+
   return (
     <>
       <header
@@ -53,15 +64,17 @@ const Header = () => {
             <div className="max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
+                onClick={onLogoClick}
+                className={`block w-full ${sticky ? "py-5 lg:py-2" : "py-8"} `}
               >
                 <ExportedImage
                   src={logo}
                   alt="logo"
                   width={60}
                   priority
+                  className={
+                    spin ? "animate-[spin_1s_linear_1]" : "animate-pulse"
+                  }
                   placeholder="empty"
                 />
               </Link>
@@ -92,6 +105,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
+                  ref={ref}
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] px-6 py-4 duration-300 dark:bg-black lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
@@ -106,6 +120,7 @@ const Header = () => {
                       >
                         <Link
                           href={menuItem.path}
+                          onClick={navbarToggleHandler}
                           className={`flex py-2 text-xl font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                             usePathName === menuItem.path
                               ? "underline decoration-primary decoration-2 underline-offset-8"

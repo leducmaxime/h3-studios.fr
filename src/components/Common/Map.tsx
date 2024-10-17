@@ -3,7 +3,7 @@ import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useCallback, useState } from "react";
 
 const containerStyle = {
-  width: "400px",
+  width: "100%",
   height: "400px",
 };
 
@@ -33,7 +33,7 @@ export default function Map() {
 
   return isLoaded ? (
     <GoogleMap
-      mapContainerStyle={containerStyle}
+      mapContainerClassName="w-full h-[400px]"
       center={center}
       zoom={15}
       onLoad={onLoad}
