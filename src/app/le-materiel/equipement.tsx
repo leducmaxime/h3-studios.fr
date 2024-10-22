@@ -55,64 +55,56 @@ export default async function Equipements({
 
   return (
     <>
-      <Table
-        theme={customTheme}
-        striped
-        className="hidden border-8 border-primary lg:table"
-      >
-        <TableHead>
-          <TableHeadCell></TableHeadCell>
-          <TableHeadCell>Studio La Scène</TableHeadCell>
-          <TableHeadCell>Studio Le Podium</TableHeadCell>
-        </TableHead>
-        <TableBody className="divide-y">
-          {equipmentData.map((item, index) => (
-            <TableRow key={index}>
-              <TableCell>{item.category}</TableCell>
-              <TableCell>{item.laScene}</TableCell>
-              <TableCell>{item.lePodium}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Table
-        theme={customTheme}
-        striped
-        className="border-8 border-primary lg:hidden"
-      >
-        <TableHead>
-          <TableHeadCell colSpan={2} className="text-center">
-            Studio La Scène
-          </TableHeadCell>
-        </TableHead>
-        <TableBody className="divide-y">
-          {equipmentData.map((item, index) => (
-            <TableRow key={index}>
-              <TableCell>{item.category}</TableCell>
-              <TableCell>{item.laScene}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-      <Table
-        theme={customTheme}
-        striped
-        className="border-8 border-primary lg:hidden"
-      >
-        <TableHead>
-          <TableHeadCell colSpan={2} className="text-center">
-            Studio Le Podium
-          </TableHeadCell>
-        </TableHead>
-        <TableBody className="divide-y">
-          {equipmentData.map((item, index) => (
-            <TableRow key={index}>
-              <TableCell>{item.category}</TableCell>
-              <TableCell>{item.lePodium}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+      <div className="hidden lg:table">
+        <Table theme={customTheme} striped className="border-8 border-primary">
+          <TableHead>
+            <TableHeadCell></TableHeadCell>
+            <TableHeadCell>Studio La Scène</TableHeadCell>
+            <TableHeadCell>Studio Le Podium</TableHeadCell>
+          </TableHead>
+          <TableBody className="divide-y">
+            {equipmentData.map((item, index) => (
+              <TableRow key={index}>
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.laScene}</TableCell>
+                <TableCell>{item.lePodium}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+      <div className="flex flex-col gap-8 lg:hidden">
+        <Table theme={customTheme} striped className="border-8 border-primary">
+          <TableHead>
+            <TableHeadCell colSpan={2} className="text-center">
+              Studio La Scène
+            </TableHeadCell>
+          </TableHead>
+          <TableBody className="divide-y">
+            {equipmentData.map((item, index) => (
+              <TableRow key={index}>
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.laScene}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+        <Table theme={customTheme} striped className="border-8 border-primary">
+          <TableHead>
+            <TableHeadCell colSpan={2} className="text-center">
+              Studio Le Podium
+            </TableHeadCell>
+          </TableHead>
+          <TableBody className="divide-y">
+            {equipmentData.map((item, index) => (
+              <TableRow key={index}>
+                <TableCell>{item.category}</TableCell>
+                <TableCell>{item.lePodium}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
     </>
   );
 }

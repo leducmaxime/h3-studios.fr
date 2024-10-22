@@ -39,18 +39,16 @@ export default async function Home() {
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
       <div className="flex w-full flex-col gap-16 text-center">
-        <div className="font-blanka text-3xl md:text-5xl lg:text-6xl">
-          LE MATERIEL
-        </div>
+        <div className="font-blanka text-3xl md:text-5xl">LE MATERIEL</div>
         <div className="flex flex-col gap-8">
-          <div className="text-center font-blanka text-2xl lg:text-3xl">
+          <div className="text-center font-blanka text-2xl">
             EQUIPEMENT DES STUDIOS
           </div>
           <Equipements customTheme={customTheme} />
         </div>
         <div className="flex flex-col gap-8 xl:flex-row">
           <div className="flex flex-col gap-8 xl:basis-1/2">
-            <div className="text-center font-blanka text-2xl lg:text-3xl">
+            <div className="text-center font-blanka text-2xl">
               {"EQUIPEMENT D'ENREGISTREMENT"}
             </div>
             <Table
@@ -105,7 +103,7 @@ export default async function Home() {
             </Table>
           </div>
           <div className="flex flex-col gap-8 xl:basis-1/2">
-            <div className="text-center font-blanka text-2xl lg:text-3xl">
+            <div className="text-center font-blanka text-2xl">
               {"LOCATION D'INSTRUMENTS"}
             </div>
             <Table
