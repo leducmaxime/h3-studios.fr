@@ -15,7 +15,9 @@ export default async function Home() {
   return (
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
-      <div className="font-blanka text-5xl lg:text-6xl">A PROPOS</div>
+      <div className="font-blanka text-3xl md:text-5xl lg:text-6xl">
+        A PROPOS
+      </div>
       <div className="flex w-full max-w-[1048px] flex-col items-center gap-8 border-8 border-primary bg-black p-4 sm:p-8">
         <div className="flex max-w-[768px] flex-col items-center gap-24 text-center">
           <div className="flex max-w-[640px] flex-col items-center gap-8 text-center">
@@ -49,10 +51,8 @@ export default async function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center gap-8 text-center">
-            <div>
-              <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
-                {"L'ÉQUIPE"}
-              </span>
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
+              {"L'ÉQUIPE"}
             </div>
             <div className="flex gap-4 px-2">
               {[
@@ -74,18 +74,14 @@ export default async function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-8 text-center">
-            <div>
-              <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
-                {"CONTACT"}
-              </span>
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
+              {"CONTACT"}
             </div>
             <div>contact@h3-studios.fr - 06 13 44 08 75</div>
           </div>
           <div className="flex w-full flex-col items-center gap-8 text-center">
-            <div>
-              <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
-                {"LOCALISATION"}
-              </span>
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
+              {"LOCALISATION"}
             </div>
             <div className="flex w-full flex-col items-center gap-8 lg:flex-row">
               <div className="flex w-full flex-col gap-8 lg:basis-1/2">

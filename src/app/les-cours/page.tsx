@@ -12,7 +12,9 @@ export default async function Home() {
   return (
     <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
       <ScrollUp />
-      <div className="font-blanka text-5xl lg:text-6xl">LES COURS</div>
+      <div className="font-blanka text-3xl md:text-5xl lg:text-6xl">
+        LES COURS
+      </div>
       <div className="flex w-full flex-col gap-8 border-8 border-primary bg-black p-8">
         <div className="flex flex-col gap-8 lg:flex-row">
           <div className="flex items-center lg:basis-1/2">
@@ -24,11 +26,9 @@ export default async function Home() {
               priority
             />
           </div>
-          <div className="flex flex-col gap-8 lg:basis-1/2">
-            <div>
-              <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
-                BATTERIE
-              </span>
+          <div className="flex flex-col gap-8 text-center lg:basis-1/2 lg:text-left">
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
+              BATTERIE
             </div>
             <p className="whitespace-pre-line">
               {`Vous souhaitez apprendre la batterie ou perfectionner votre technique ? 
@@ -43,10 +43,8 @@ Fort de 30 ans d’enseignement d’enseignement en batterie et percussions dans
 
 N'attendez plus pour donner vie à votre passion musicale ! Contactez-moi dès maintenant pour plus d’informations ou pour réserver votre première leçon.`}
             </p>
-            <div>
-              <span className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
-                ATTELIER ARRANGEMENT
-              </span>
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
+              ATELIER ARRANGEMENT
             </div>
             <p className="whitespace-pre-line">{`Prochainement…`}</p>
           </div>

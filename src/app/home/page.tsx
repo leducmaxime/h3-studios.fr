@@ -45,7 +45,7 @@ export default function Home() {
           href="https://www.quickstudio.com/en/studios/h3-studios"
           target="_blank"
         >
-          <button className="mt-8 rounded-[3rem] bg-primary px-8 py-2 text-[1rem] font-bold text-black md:text-[2rem]">
+          <button className="rounded-[3rem] bg-primary px-12 py-4 text-xl font-bold text-black md:text-3xl">
             Réservation
           </button>
         </a>

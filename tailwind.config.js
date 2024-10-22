@@ -41,7 +41,7 @@ module.exports = {
         primary: "#ffde59",
       },
       fontFamily: {
-        sans: ["var(--font-inter)"],
+        sans: ["var(--font-now)"],
         blanka: ["var(--font-blanka)"],
       },
     },

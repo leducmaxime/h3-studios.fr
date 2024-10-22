@@ -49,7 +49,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="max-w-full px-4 xl:mr-12">
+            <div className="max-w-full px-4 xl:mr-6">
               <Link
                 href="/"
                 onClick={onLogoClick}
@@ -100,7 +100,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:w-full lg:space-x-12">
+                  <ul className="block lg:flex lg:w-full lg:space-x-6">
                     {menuData.map((menuItem, index) => (
                       <li
                         key={index}
@@ -109,7 +109,7 @@ const Header = () => {
                         <Link
                           href={menuItem.path}
                           onClick={navbarToggleHandler}
-                          className={`flex py-2 text-xl font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                          className={`flex py-2 text-lg font-bold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                             usePathName === menuItem.path
                               ? "underline decoration-primary decoration-2 underline-offset-8"
                               : ""

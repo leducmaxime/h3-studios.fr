@@ -1,16 +1,22 @@
 // import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import Header from "@/components/Header";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
-const inter = Inter({
-  subsets: ["latin"],
+const now = localFont({
+  src: [
+    { path: "./Now-Thin.woff", weight: "250" },
+    { path: "./Now-Light.woff", weight: "300" },
+    { path: "./Now-Regular.woff", weight: "400" },
+    { path: "./Now-Medium.woff", weight: "500" },
+    { path: "./Now-Bold.woff", weight: "700" },
+    { path: "./Now-Black.woff", weight: "900" },
+  ],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-now",
 });
 
 const blanka = localFont({
@@ -62,7 +68,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`h-screen bg-[url('/images/background.webp')] ${inter.variable} ${blanka.variable}`}
+        className={`h-screen bg-[url('/images/background.webp')] ${now.variable} ${blanka.variable}`}
       >
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden text-white">
           <Providers>

@@ -49,7 +49,7 @@ export default async function Home() {
             key={i}
             className="flex basis-full flex-col items-center gap-8 border-8 border-primary bg-black p-4 lg:basis-1/2"
           >
-            <div className="rounded-lg bg-primary p-2 text-2xl font-bold text-black">
+            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
               {studio.name}
             </div>
             <div className="font-blanka text-2xl">{studio.size}</div>
