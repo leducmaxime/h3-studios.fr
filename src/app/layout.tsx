@@ -2,7 +2,6 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
-import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
 const now = localFont({

@@ -1,5 +1,3 @@
-import { promises as fs } from "fs";
-import path from "path";
 import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
