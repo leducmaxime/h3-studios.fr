@@ -2,7 +2,6 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
-import { ThemeProvider } from "next-themes";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -48,21 +47,13 @@ export const metadata: Metadata = {
   },
 };
 
-function Providers({ children }: { children: React.ReactNode }) {
-  return (
-    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
-      {children}
-    </ThemeProvider>
-  );
-}
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="fr">
+    <html lang="fr">
       <head>
         <link rel="preload" href="/images/background.webp" as="image" />
       </head>
@@ -71,13 +62,11 @@ export default function RootLayout({
         className={`h-screen bg-[url('/images/background.webp')] ${now.variable} ${blanka.variable}`}
       >
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden text-white">
-          <Providers>
-            <Header />
-            <div className="container flex h-full flex-col justify-between">
-              {children}
-              {/* <Footer /> */}
-            </div>
-          </Providers>
+          <Header />
+          <div className="container flex h-full flex-col justify-between">
+            {children}
+            {/* <Footer /> */}
+          </div>
         </div>
       </body>
     </html>

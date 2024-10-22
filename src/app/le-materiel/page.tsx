@@ -1,14 +1,7 @@
 import ScrollUp from "@/components/Common/ScrollUp";
 import { Metadata } from "next";
 import type { CustomFlowbiteTheme } from "flowbite-react";
-import {
-  Table,
-  TableHead,
-  TableHeadCell,
-  TableBody,
-  TableRow,
-  TableCell,
-} from "flowbite-react";
+import { Table, TableBody, TableRow, TableCell } from "flowbite-react";
 import Equipements from "./equipement";
 
 export const metadata: Metadata = {
@@ -19,7 +12,7 @@ const customTheme: CustomFlowbiteTheme["table"] = {
   root: {
     base: "w-full text-left text-sm text-white",
     shadow:
-      "absolute left-0 top-0 -z-10 h-full w-full rounded-lg bg-white drop-shadow-md dark:bg-black",
+      "absolute left-0 top-0 -z-10 h-full w-full rounded-lg bg-white drop-shadow-md bg-black",
     wrapper: "relative",
   },
   body: {
@@ -36,7 +29,7 @@ const customTheme: CustomFlowbiteTheme["table"] = {
   },
   row: {
     base: "group/row border-primary",
-    hovered: "hover:bg-gray-50 dark:hover:bg-gray-600",
+    hovered: "hover:bg-gray-600",
     striped: "odd:bg-black-800 even:bg-black-700",
   },
 };
