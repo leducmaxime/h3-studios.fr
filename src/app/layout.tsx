@@ -2,11 +2,23 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const blanka = localFont({
+  src: "./Blanka-Regular.woff",
+  weight: "400",
+  display: "swap",
+  variable: "--font-blanka",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tmp.h3-studios.fr"),
@@ -47,27 +59,10 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="fr">
       <head>
         <link rel="preload" href="/images/background.webp" as="image" />
-        <link
-          rel="preload"
-          href="https://fonts.cdnfonts.com/s/18915/Blanka-Regular.woff"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link
-          href="https://fonts.cdnfonts.com/css/blanka"
-          rel="stylesheet"
-          type="text/css"
-        />
       </head>
 
       <body
-        className={`h-screen bg-[url('/images/background.webp')] ${inter.className}`}
+        className={`h-screen bg-[url('/images/background.webp')] ${inter.variable} ${blanka.variable}`}
       >
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden text-white">
           <Providers>
