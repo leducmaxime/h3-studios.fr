@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import ExportedImage from "next-image-export-optimizer";
-import logo from "public/images/logo/logo.png";
+import logo from "./images/logo.png";
 import { useClickAway } from "@uidotdev/usehooks";
 
 const Header = () => {
