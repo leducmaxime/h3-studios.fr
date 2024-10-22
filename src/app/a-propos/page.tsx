@@ -19,7 +19,7 @@ export default async function Home() {
         A PROPOS
       </div>
       <div className="flex w-full max-w-[1048px] flex-col items-center gap-8 border-8 border-primary bg-black p-4 sm:p-8">
-        <div className="flex max-w-[768px] flex-col items-center gap-24 text-center">
+        <div className="flex max-w-screen-md flex-col items-center gap-24 text-center">
           <div className="flex max-w-[640px] flex-col items-center gap-8 text-center">
             <p>
               <b>H3 Studios</b>

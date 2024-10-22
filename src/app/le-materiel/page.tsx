@@ -117,7 +117,7 @@ export default async function Home() {
                   <TableCell>
                     TUNE 5 cordes
                     <br />
-                    Eagle / Greg Bi
+                    Eagle / Greg Bi
                   </TableCell>
                 </TableRow>
                 <TableRow>

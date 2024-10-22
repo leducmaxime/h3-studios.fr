@@ -41,9 +41,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
+        className={`left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-sticky fixed z-[9999] bg-black !bg-opacity-80 backdrop-blur-sm transition"
+            ? "fixed z-[9999] bg-black !bg-opacity-80 backdrop-blur-sm transition"
             : "absolute bg-black"
         }`}
       >
@@ -73,20 +73,20 @@ const Header = () => {
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "opacity-0" : " "
                     }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                    className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${
                       navbarOpen ? "top-[-8px] -rotate-45" : " "
                     }`}
                   />
@@ -94,9 +94,9 @@ const Header = () => {
                 <nav
                   id="navbarCollapse"
                   ref={ref}
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] px-6 py-4 duration-300 dark:bg-black lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-black px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
-                      ? "visibility top-full opacity-100"
+                      ? "visible top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
@@ -115,7 +115,7 @@ const Header = () => {
                               : ""
                           }`}
                         >
-                          {` ${menuItem.title} `}
+                          {` ${menuItem.title} `}
                         </Link>
                       </li>
                     ))}
