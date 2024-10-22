@@ -5,15 +5,15 @@ import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 import { Carousel } from "flowbite-react";
 
-import scene1 from "public/images/les-studios/scene-1.jpg";
-import scene2 from "public/images/les-studios/scene-2.jpg";
-import scene3 from "public/images/les-studios/scene-3.jpg";
-import scene4 from "public/images/les-studios/scene-4.jpg";
-import scene5 from "public/images/les-studios/scene-5.jpg";
+import scene1 from "./images/scene-1.jpg";
+import scene2 from "./images/scene-2.jpg";
+import scene3 from "./images/scene-3.jpg";
+import scene4 from "./images/scene-4.jpg";
+import scene5 from "./images/scene-5.jpg";
 
-import podium1 from "public/images/les-studios/podium-1.jpg";
-import podium2 from "public/images/les-studios/podium-2.jpg";
-import podium3 from "public/images/les-studios/podium-3.jpg";
+import podium1 from "./images/podium-1.jpg";
+import podium2 from "./images/podium-2.jpg";
+import podium3 from "./images/podium-3.jpg";
 
 export const metadata: Metadata = {
   title: "Les Studios",

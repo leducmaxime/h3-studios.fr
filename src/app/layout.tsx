@@ -2,6 +2,7 @@
 import { Metadata } from "next";
 import Header from "@/components/Header";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
@@ -28,6 +29,14 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+function Providers({ children }: { children: React.ReactNode }) {
+  return (
+    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
+      {children}
+    </ThemeProvider>
+  );
+}
 
 export default function RootLayout({
   children,
@@ -73,5 +82,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import { Providers } from "./providers";

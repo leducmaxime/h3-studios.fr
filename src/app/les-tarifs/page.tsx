@@ -2,7 +2,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 
-import scene1 from "public/images/les-tarifs/1.png";
+import scene1 from "./images/1.png";
 
 export const metadata: Metadata = {
   title: "Les Tarifs",
