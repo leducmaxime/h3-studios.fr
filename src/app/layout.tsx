@@ -58,7 +58,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`h-screen bg-[url('/images/background.webp')] ${now.variable} ${blanka.variable}`}
+        className={`h-screen bg-[url('/images/background.webp')] bg-[length:500px] bg-repeat ${now.variable} ${blanka.variable}`}
       >
         <div className="h-screen w-screen overflow-y-auto overflow-x-hidden text-white">
           <Header />

@@ -53,7 +53,7 @@ const Header = () => {
               <Link
                 href="/"
                 onClick={onLogoClick}
-                className={`block w-full ${sticky ? "py-5 lg:py-2" : "py-8"} `}
+                className={`block w-full ${sticky ? "py-5 lg:py-2" : "py-4"} `}
               >
                 <ExportedImage
                   src={logo}

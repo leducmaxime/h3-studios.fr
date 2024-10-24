@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   return (
-    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
+    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-24">
       <ScrollUp />
       <div className="font-blanka text-3xl md:text-5xl">LES COURS</div>
       <div className="flex w-full flex-col gap-8 border-8 border-primary bg-black p-8">

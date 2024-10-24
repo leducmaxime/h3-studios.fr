@@ -2,9 +2,10 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import ExportedImage from "next-image-export-optimizer";
 import { Metadata } from "next";
 
-import celmar from "./images/celmar.jpg";
-import alexandre from "./images/alexandre.jpg";
-import caroline from "./images/caroline.jpg";
+// import celmar from "./images/celmar.jpg";
+// import alexandre from "./images/alexandre.jpg";
+// import caroline from "./images/caroline.jpg";
+import bandeau from "./images/bandeau.jpg";
 import Map from "../../components/Common/Map";
 
 export const metadata: Metadata = {
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   return (
-    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
+    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-24">
       <ScrollUp />
       <div className="font-blanka text-3xl md:text-5xl lg:text-6xl">
         A PROPOS
       </div>
       <div className="flex w-full max-w-[1048px] flex-col items-center gap-8 border-8 border-primary bg-black p-4 sm:p-8">
-        <div className="flex max-w-screen-md flex-col items-center gap-24 text-center">
+        <div className="flex max-w-screen-md flex-col items-center gap-16 text-center">
           <div className="flex max-w-[640px] flex-col items-center gap-8 text-center">
             <p>
               <b>H3 Studios</b>
@@ -50,29 +51,36 @@ export default async function Home() {
               <br /> des artistes authentiques !
             </p>
           </div>
-          <div className="flex flex-col items-center gap-8 text-center">
-            <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
-              {"L'ÉQUIPE"}
-            </div>
-            <div className="flex gap-4 px-2">
-              {[
-                { src: celmar, name: "Marcel" },
-                { src: alexandre, name: "Alexandre" },
-                { src: caroline, name: "Caroline" },
-              ].map((item, index) => (
-                <div key={index} className="flex basis-1/3 flex-col gap-8">
-                  <ExportedImage
-                    src={item.src}
-                    alt={item.name}
-                    sizes="(max-width: 768px) 33vw, 235px"
-                    className="aspect-square rounded-2xl object-cover"
-                    priority
-                  />
-                  <div className="text-xl text-primary">{item.name}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ExportedImage
+            src={bandeau}
+            alt="bandeau"
+            sizes="(max-width: 968px) 100vw, 968px"
+            className=""
+            priority
+          />
+          {/* <div className="flex flex-col items-center gap-8 text-center"> */}
+          {/*   <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8"> */}
+          {/*     {"L'ÉQUIPE"} */}
+          {/*   </div> */}
+          {/*   <div className="flex gap-4 px-2"> */}
+          {/*     {[ */}
+          {/*       { src: celmar, name: "Marcel" }, */}
+          {/*       { src: alexandre, name: "Alexandre" }, */}
+          {/*       { src: caroline, name: "Caroline" }, */}
+          {/*     ].map((item, index) => ( */}
+          {/*       <div key={index} className="flex basis-1/3 flex-col gap-8"> */}
+          {/*         <ExportedImage */}
+          {/*           src={item.src} */}
+          {/*           alt={item.name} */}
+          {/*           sizes="(max-width: 768px) 33vw, 235px" */}
+          {/*           className="aspect-square rounded-2xl object-cover" */}
+          {/*           priority */}
+          {/*         /> */}
+          {/*         <div className="text-xl text-primary">{item.name}</div> */}
+          {/*       </div> */}
+          {/*     ))} */}
+          {/*   </div> */}
+          {/* </div> */}
           <div className="flex flex-col items-center gap-8 text-center">
             <div className="text-2xl font-bold text-primary underline decoration-4 underline-offset-8">
               {"CONTACT"}

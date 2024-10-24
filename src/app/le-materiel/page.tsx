@@ -1,42 +1,16 @@
 import ScrollUp from "@/components/Common/ScrollUp";
 import { Metadata } from "next";
-import type { CustomFlowbiteTheme } from "flowbite-react";
 import { Table, TableBody, TableRow, TableCell } from "flowbite-react";
 import Equipements from "./equipement";
+import { customTheme } from "../theme";
 
 export const metadata: Metadata = {
   title: "Le Matériel",
 };
 
-const customTheme: CustomFlowbiteTheme["table"] = {
-  root: {
-    base: "w-full text-left text-sm text-white",
-    shadow:
-      "absolute left-0 top-0 -z-10 h-full w-full rounded-lg bg-white drop-shadow-md bg-black",
-    wrapper: "relative",
-  },
-  body: {
-    base: "group/body",
-    cell: {
-      base: "px-6 py-4 group-first/body:group-first/row:first:rounded-tl-lg group-first/body:group-first/row:last:rounded-tr-lg group-last/body:group-last/row:first:rounded-bl-lg group-last/body:group-last/row:last:rounded-br-lg",
-    },
-  },
-  head: {
-    base: "group/head text-sm uppercase text-primary",
-    cell: {
-      base: "border-b border-primary px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg",
-    },
-  },
-  row: {
-    base: "group/row border-primary",
-    hovered: "hover:bg-gray-600",
-    striped: "odd:bg-black-800 even:bg-black-700",
-  },
-};
-
 export default async function Home() {
   return (
-    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-32">
+    <div className="flex min-h-fit grow flex-col items-center gap-8 pb-8 pt-24">
       <ScrollUp />
       <div className="flex w-full flex-col gap-16 text-center">
         <div className="font-blanka text-3xl md:text-5xl">LE MATERIEL</div>

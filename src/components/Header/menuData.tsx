@@ -11,15 +11,15 @@ const menuData: Menu[] = [
     title: "Le Matériel",
     path: "/le-materiel",
   },
-  {
-    id: 33,
-    title: "Les Cours",
-    path: "/les-cours",
-  },
+  // {
+  //   id: 33,
+  //   title: "Les Cours",
+  //   path: "/les-cours",
+  // },
   {
     id: 3,
-    title: "Les Tarifs",
-    path: "/les-tarifs",
+    title: "Tarifs et Réservation",
+    path: "/tarifs-et-reservation",
   },
   {
     id: 4,
