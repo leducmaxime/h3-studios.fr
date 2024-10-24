@@ -12,6 +12,7 @@ import scene5 from "./images/scene-5.jpg";
 import podium1 from "./images/podium-1.jpg";
 import podium2 from "./images/podium-2.jpg";
 import podium3 from "./images/podium-3.jpg";
+import podium4 from "./images/podium-4.jpg";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ const studios = [
     size: "35 M2",
     description:
       "Conçu pour la répétition, cet espace de 35m² offre un cadre simple et fonctionnel, idéal pour vos sessions musicales, en groupe ou en solo. Cette salle est également adapté aux enseignants souhaitant donner des cours à un ou plusieurs élèves.",
-    images: [podium2, podium1, podium3],
+    images: [podium2, podium1, podium3, podium4],
   },
 ];
 

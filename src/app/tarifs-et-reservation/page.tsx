@@ -54,7 +54,7 @@ export default async function Home() {
               </div>
             </div>
             <div className="text-center font-blanka text-2xl">
-              {"LES TARIFS"}
+              {"LES STUDIOS"}
             </div>
             <div className="flex w-full flex-col gap-4">
               <Table
@@ -135,6 +135,11 @@ export default async function Home() {
                   </TableRow>
                 </TableBody>
               </Table>
+            </div>
+            <div className="text-center font-blanka text-2xl">
+              {"ENREGISTREMENT ET LOCATIONS"}
+            </div>
+            <div className="flex w-full flex-col gap-4">
               <Table
                 theme={customTheme}
                 striped
