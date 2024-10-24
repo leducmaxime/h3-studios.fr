@@ -102,12 +102,22 @@ export default async function Home() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <div className="flex flex-col">
-                        <b>Solo / Duo</b>
-                      </div>
+                      <b>Solo / Duo</b>
+                      <br />
+                      En semaine
                     </TableCell>
                     <TableCell>8€/Heure</TableCell>
                     <TableCell>6€/Heure</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      <b>Solo / Duo</b>
+                      <br />
+                      <span className="whitespace-nowrap">Week-end /</span>{" "}
+                      <span className="whitespace-nowrap">Jours fériés</span>
+                    </TableCell>
+                    <TableCell>10€/Heure</TableCell>
+                    <TableCell>8€/Heure</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -127,7 +137,7 @@ export default async function Home() {
                     <TableCell>
                       50€/Heure
                       <br />
-                      160€/Demi-Journée
+                      170€/Demi-Journée
                       <br />
                       320€/Journée
                     </TableCell>
