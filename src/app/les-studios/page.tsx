@@ -59,7 +59,7 @@ export default async function Home() {
                       key={i}
                       src={image}
                       alt={`${studio.name} - ${i}`}
-                      sizes="(min-width: 576px) 306px, 624px"
+                      sizes="(max-width: 992px) 80vw, 386px"
                       className="min-h-full object-cover"
                       priority={i === 0}
                     />
