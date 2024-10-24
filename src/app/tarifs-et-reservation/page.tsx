@@ -63,6 +63,7 @@ export default async function Home() {
                 className="w-full border-8 border-primary text-center"
               >
                 <TableHead>
+                  <TableHeadCell className="hidden sm:table-cell"></TableHeadCell>
                   <TableHeadCell></TableHeadCell>
                   <TableHeadCell>
                     Studio <span className="whitespace-nowrap">La Scène</span>
@@ -73,12 +74,18 @@ export default async function Home() {
                 </TableHead>
                 <TableBody className="divide-y">
                   <TableRow>
-                    <TableCell>
+                    <TableCell rowSpan={2} className="hidden sm:table-cell">
                       <b>
                         Groupes{" "}
                         <span className="whitespace-nowrap">(3 ou +)</span>
                       </b>
-                      <br />
+                    </TableCell>
+                    <TableCell>
+                      <b className="mb-2 block sm:hidden">
+                        Groupes{" "}
+                        <span className="whitespace-nowrap">(3 ou +)</span>
+                        <br />
+                      </b>
                       Avant 18h
                     </TableCell>
                     <TableCell>18€/Heure</TableCell>
@@ -86,11 +93,11 @@ export default async function Home() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <b>
+                      <b className="mb-2 block sm:hidden">
                         Groupes{" "}
                         <span className="whitespace-nowrap">(3 ou +)</span>
+                        <br />
                       </b>
-                      <br />
                       <span className="whitespace-nowrap">
                         Après 18h /
                       </span>{" "}
@@ -101,9 +108,14 @@ export default async function Home() {
                     <TableCell>18€/Heure</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell>
+                    <TableCell rowSpan={2} className="hidden sm:table-cell">
                       <b>Solo / Duo</b>
-                      <br />
+                    </TableCell>
+                    <TableCell>
+                      <b className="mb-2 block sm:hidden">
+                        Solo / Duo
+                        <br />
+                      </b>
                       En semaine
                     </TableCell>
                     <TableCell>8€/Heure</TableCell>
@@ -111,8 +123,10 @@ export default async function Home() {
                   </TableRow>
                   <TableRow>
                     <TableCell>
-                      <b>Solo / Duo</b>
-                      <br />
+                      <b className="mb-2 block sm:hidden">
+                        Solo / Duo
+                        <br />
+                      </b>
                       <span className="whitespace-nowrap">Week-end /</span>{" "}
                       <span className="whitespace-nowrap">Jours fériés</span>
                     </TableCell>
@@ -134,12 +148,10 @@ export default async function Home() {
                         <span>(nous contacter pour le mixage éventuel)</span>
                       </div>
                     </TableCell>
-                    <TableCell>
-                      50€/Heure
-                      <br />
-                      170€/Demi-Journée
-                      <br />
-                      320€/Journée
+                    <TableCell className="flex flex-col gap-2">
+                      <span>50€/Heure</span>
+                      <span>170€/Demi-Journée</span>
+                      <span>320€/Journée</span>
                     </TableCell>
                   </TableRow>
                   <TableRow>

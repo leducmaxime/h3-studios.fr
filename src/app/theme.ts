@@ -16,7 +16,7 @@ export const customTheme: CustomFlowbiteTheme["table"] = {
   head: {
     base: "group/head text-sm uppercase text-primary",
     cell: {
-      base: "border-b border-primary px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg",
+      base: "border-b border-primary px-1 sm:px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg",
     },
   },
   row: {
