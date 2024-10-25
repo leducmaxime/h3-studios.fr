@@ -29,6 +29,9 @@ export default function Home() {
         />
         <div className="text-center font-blanka text-lg md:text-2xl">
           {[
+            "Location de studios",
+            "Repetitions",
+            "Enregistrements",
             "Location de materiel",
             "Cours de Batterie",
             "Privatisation",
