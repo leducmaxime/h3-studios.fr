@@ -25,7 +25,7 @@ const blanka = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tmp.h3-studios.fr"),
+  metadataBase: new URL("https://h3-studios.fr"),
   title: {
     template: "%s | H3 STUDIOS",
     default: "H3 STUDIOS",
