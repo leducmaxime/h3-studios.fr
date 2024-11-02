@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-image-export-optimizer",
+    "build": "next build",
+    "postbuild": "next-image-export-optimizer && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -15,6 +16,7 @@
     "flowbite-react": "^0.10.2",
     "next": "^15.0.1",
     "next-image-export-optimizer": "^1.15.1",
+    "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
