@@ -27,8 +27,8 @@ const blanka = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://h3-studios.fr"),
   title: {
-    template: "%s | H3 STUDIOS",
-    default: "H3 STUDIOS",
+    template: "%s | H3 STUDIOS - Répétitions, Enregistrements à Sucy-en-Brie",
+    default: "H3 STUDIOS - Répétitions, Enregistrements à Sucy-en-Brie",
   },
   description:
     "H3 STUDIOS - Répétitions - Enregistrements - Location de matériel - Cours de Batterie - Privatisation - Ateliers d'arrangements musicaux",
