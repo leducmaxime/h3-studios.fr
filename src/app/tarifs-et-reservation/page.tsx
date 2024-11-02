@@ -32,8 +32,11 @@ export default async function Home() {
                 RÉSERVATION
               </div>
               <div className="flex flex-col gap-2">
+                <p className="whitespace-pre-line font-bold">
+                  {`Prochainement, réservations en ligne !`}
+                </p>
                 <p className="whitespace-pre-line">
-                  {`Pour plus d'informations ou pour effectuer une réservation,
+                  {`En attendant, pour plus d'informations ou pour effectuer une réservation,
                     n'hésitez pas à contacter notre équipe par e-mail à `}
                 </p>
                 <a
