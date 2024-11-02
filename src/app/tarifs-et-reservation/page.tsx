@@ -169,10 +169,10 @@ export default async function Home() {
                 </TableBody>
               </Table>
             </div>
-            <span className="text-xs">
-              <span className="text-2xl leading-3">*</span> À partir de vendredi
-              18h{" "}
+            <span className="text-primary">
+              Abonnement possible sur demande
             </span>
+            <span className="text-xs">∗ À partir de vendredi 18h </span>
             <div className="text-center font-blanka text-2xl">
               {"ENREGISTREMENT ET LOCATIONS"}
             </div>
