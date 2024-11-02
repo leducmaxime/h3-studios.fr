@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
 import "../styles/index.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const now = localFont({
   src: [
@@ -56,7 +57,7 @@ export default function RootLayout({
       <head>
         <link rel="preload" href="/images/background.webp" as="image" />
       </head>
-
+      <GoogleTagManager gtmId="GTM-T9LNV98W" />
       <body
         className={`h-screen bg-[url('/images/background.webp')] bg-[length:500px] bg-repeat ${now.variable} ${blanka.variable}`}
       >
