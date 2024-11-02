@@ -130,7 +130,9 @@ export default async function Home() {
                         Duo
                         <br />
                       </b>
-                      <span className="whitespace-nowrap">Week-end /</span>{" "}
+                      <span className="whitespace-nowrap">
+                        Week-end <span className="text-2xl leading-3">*</span> /
+                      </span>{" "}
                       <span className="whitespace-nowrap">Jours fériés</span>
                     </TableCell>
                     <TableCell>12€/Heure</TableCell>
@@ -156,7 +158,9 @@ export default async function Home() {
                         Solo / Enseignant
                         <br />
                       </b>
-                      <span className="whitespace-nowrap">Week-end /</span>{" "}
+                      <span className="whitespace-nowrap">
+                        Week-end <span className="text-2xl leading-3">*</span> /
+                      </span>{" "}
                       <span className="whitespace-nowrap">Jours fériés</span>
                     </TableCell>
                     <TableCell>10€/Heure</TableCell>
@@ -165,6 +169,10 @@ export default async function Home() {
                 </TableBody>
               </Table>
             </div>
+            <span className="text-xs">
+              <span className="text-2xl leading-3">*</span> À partir de vendredi
+              18h{" "}
+            </span>
             <div className="text-center font-blanka text-2xl">
               {"ENREGISTREMENT ET LOCATIONS"}
             </div>
