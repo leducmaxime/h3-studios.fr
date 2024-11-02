@@ -57,7 +57,7 @@ export default function RootLayout({
       <head>
         <link rel="preload" href="/images/background.webp" as="image" />
       </head>
-      <GoogleTagManager gtmId="GTM-T9LNV98W" />
+      <GoogleTagManager gtmId="G-B3TYEET971" />
       <body
         className={`h-screen bg-[url('/images/background.webp')] bg-[length:500px] bg-repeat ${now.variable} ${blanka.variable}`}
       >
