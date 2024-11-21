@@ -140,11 +140,11 @@ export default async function Home() {
                   </TableRow>
                   <TableRow>
                     <TableCell rowSpan={2} className="hidden sm:table-cell">
-                      <b>Solo / Enseignant</b>
+                      <b>Solo</b>
                     </TableCell>
                     <TableCell>
                       <b className="mb-2 block sm:hidden">
-                        Solo / Enseignant
+                        Solo
                         <br />
                       </b>
                       En semaine
@@ -155,7 +155,7 @@ export default async function Home() {
                   <TableRow>
                     <TableCell>
                       <b className="mb-2 block sm:hidden">
-                        Solo / Enseignant
+                        Solo
                         <br />
                       </b>
                       <span className="whitespace-nowrap">
