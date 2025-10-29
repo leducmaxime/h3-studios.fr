@@ -121,8 +121,7 @@ export default async function Home() {
                       </b>
                       Tarif unique
                     </TableCell>
-                    <TableCell>12€/Heure</TableCell>
-                    <TableCell>12€/Heure</TableCell>
+                    <TableCell colSpan={2}>12€/Heure</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell rowSpan={1} className="hidden sm:table-cell">
@@ -135,8 +134,7 @@ export default async function Home() {
                       </b>
                       Tarif unique
                     </TableCell>
-                    <TableCell>6€/Heure</TableCell>
-                    <TableCell>6€/Heure</TableCell>
+                    <TableCell colSpan={2}>6€/Heure</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
