@@ -111,7 +111,7 @@ export default async function Home() {
                     <TableCell>18€/Heure</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell rowSpan={2} className="hidden sm:table-cell">
+                    <TableCell rowSpan={1} className="hidden sm:table-cell">
                       <b>Duo</b>
                     </TableCell>
                     <TableCell>
@@ -119,52 +119,24 @@ export default async function Home() {
                         Duo
                         <br />
                       </b>
-                      En semaine
-                    </TableCell>
-                    <TableCell>10€/Heure</TableCell>
-                    <TableCell>8€/Heure</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <b className="mb-2 block sm:hidden">
-                        Duo
-                        <br />
-                      </b>
-                      <span className="whitespace-nowrap">
-                        Week-end <span className="text-2xl leading-3">*</span> /
-                      </span>{" "}
-                      <span className="whitespace-nowrap">Jours fériés</span>
+                      Tarif unique
                     </TableCell>
                     <TableCell>12€/Heure</TableCell>
-                    <TableCell>10€/Heure</TableCell>
+                    <TableCell>12€/Heure</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell rowSpan={2} className="hidden sm:table-cell">
-                      <b>Solo</b>
+                    <TableCell rowSpan={1} className="hidden sm:table-cell">
+                      <b>Solo et enseignant</b>
                     </TableCell>
                     <TableCell>
                       <b className="mb-2 block sm:hidden">
-                        Solo
+                        Solo et enseignant
                         <br />
                       </b>
-                      En semaine
+                      Tarif unique
                     </TableCell>
-                    <TableCell>8€/Heure</TableCell>
                     <TableCell>6€/Heure</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      <b className="mb-2 block sm:hidden">
-                        Solo
-                        <br />
-                      </b>
-                      <span className="whitespace-nowrap">
-                        Week-end <span className="text-2xl leading-3">*</span> /
-                      </span>{" "}
-                      <span className="whitespace-nowrap">Jours fériés</span>
-                    </TableCell>
-                    <TableCell>10€/Heure</TableCell>
-                    <TableCell>8€/Heure</TableCell>
+                    <TableCell>6€/Heure</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -172,7 +144,7 @@ export default async function Home() {
             <span className="text-primary">
               Abonnement possible sur demande
             </span>
-            <span className="text-xs">∗ À partir de vendredi 18h </span>
+
             <div className="text-center font-blanka text-2xl">
               {"ENREGISTREMENT ET LOCATIONS"}
             </div>
